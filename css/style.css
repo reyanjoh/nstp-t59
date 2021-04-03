@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+ul{
+    display: flex;   
+    float: left;
+    margin: 2rem 8rem;
+}
+ul li a{
+
+    padding: .5rem 2rem;
+    margin: 0 .3rem;
+    font-size: 1rem;
+    color: #806D7A;
+    text-align: center;
+}
+
+ul li a:hover{
+    color: #787EFF;
+}
+
+.headerBtns{
+    float: right;
+    width: auto;
+    margin: 1.5% 4rem;
+}
+.headerBtn{
+    height: 2.5rem;
+    width: 6rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #787EFF;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+.headerBtn:hover{
+    outline: 2px solid thistle;
+    transition: 1s;
+    cursor: not-allowed;
+}
+.signIn{
+    background-color: transparent;
+    color: #806D7A;
+}
+
+/*//////////////// end of header styling ////////////////*/
+/*//////////////// start of body styling ////////////////*/
+/*//////////////////////// blogs ////////////////////////*/
+
+#Viewport{
+    padding: 4rem 8rem 0;
+}
+
+#Viewport .body{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2rem;
+}
+.blogContent{
+    height: 18rem;
+    width: 20rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.blogContent:hover h4{
+    transition: 500ms;
+    opacity: 1;
+}
+.blogContent .blogPost{
+    background-color: #E5E9EC;
+    height: 15rem;
+    border-radius: 8px;
+}
+h4{
+    margin: -2.5rem 2rem 0;
+    color: #ffffff;
+    text-shadow: 1px 1px rgb(77, 77, 77);
+    opacity: 0;
+}
+
+h5{
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    margin: .5rem 1rem;
+}
+.blogImage{
+    border-radius: 8px;
+    height: 15rem;
+    width: 20rem;
+}
+
+footer{
+    height: 8rem;
+}
+
+
+
+
+
