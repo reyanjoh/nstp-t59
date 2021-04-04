@@ -12,7 +12,7 @@ const getBlogPosts = (doc) =>{
     blogImage.className = 'blogImage';
     blogImage.src = doc.data().img;
     if(doc.data().img == '' || doc.data().img == null){
-        blogImage.src = './images/placeHolder.png';
+        blogImage.src = './images/cat.jpg';
     }
     blogPost.appendChild(blogImage);
     
