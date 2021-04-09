@@ -22,7 +22,7 @@ const getBlogPosts = (doc) =>{
     
     const h4 = document.createElement('h4'); 
     if(doc.data().body == null){
-        h4.innerText = 'sad';
+        h4.innerText = 'RIP Narvs';
     }else{
         h4.innerText = `${doc.data().body.substring(0,50)} read more...`;
     }
