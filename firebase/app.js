@@ -16,7 +16,7 @@ const getBlogPosts = (doc) =>{
     blogImage.id = doc.id;
     blogImage.src = doc.data().img;
     if(doc.data().img == '' || doc.data().img == null){
-        blogImage.src = './images/cat.jpg';
+        blogImage.src = './images/cat1.jpg';
     }
     blogPost.appendChild(blogImage);
     
