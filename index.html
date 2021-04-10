@@ -5,59 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NSTP | </title>
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
-    <link rel="stylesheet" href="./css/style.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blogs</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        <div class="headerBtns">
-            <input class="headerBtn signIn" type="button" value="Sign in">
-            <input class="headerBtn" type="button" value="Sign up">
-        </div>
+    <header class="flex-horizontal-space-between">
+        <nav class="links flex-horizontal">
+            <a class="header-name spaced blue-hover" href="#">NSTP BLOG-BLOG</a>
+
+            <a class="header-a spaced blue-hover after" href="#">HOME</a>
+            <a class="header-a spaced blue-hover after" href="#">BLOGS</a>
+            <a class="header-a spaced blue-hover after" href="#">ABOUT</a>
+            <a class="header-a spaced blue-hover" href="#">CONTACTS</a>
+        </nav>
+        
+        <nav class="header-btn-nav">
+            <input class="header-button not-allowed blue-hover sign-in" type="button" value="sign in">
+            <input class="header-button not-allowed sign-up" type="button" value="sign up">
+        </nav>
     </header>
-
-    <div id="Viewport">
-        <div class="body home">
-
-        </div>
-        <div class="body blogs">
-            
-            <!-- <div class="blogContent">
-                <div class="blogPost">
-                    <img class="blogImage" src="./images/cat.jpg">
-                    <h4>Writer: Reyan John Narvaja</h4> 
-                </div>
-                <h5> lorem epsum lorem epsum lorem epsum lorem epsum lorem epsum lorem epsum </h5>
-            </div>
-            <div class="blogContent">
-                <div class="blogPost">
-                    <img class="blogImage" src="./images/mental.jpg">
-                    <h4>Writer: Reyan John Narvaja</h4> 
-                </div>
-                <h5> mental health problems among online/virtual college students</h5>
-            </div>             
-            <div class="blogContent">
-                <div class="blogPost">
-                    <img class="blogImage" src="./images/cat.jpg">
-                    <h4>Writer: Reyan John Narvaja</h4> 
-                </div>
-                <h5> lorem epsum lorem epsum lorem epsum lorem epsum lorem epsum lorem epsum </h5>
-            </div> -->
-            
-        </div>
-        <div class="body about">
-
-        </div>
+    <div class="large-header spaced center-x-y">
+        <h1>-NSTP-T59 PROJECT-</h1>
+        <p>-SAD-</p>
+        
     </div>
-<footer></footer>
+    <div id="body">
+        <div class="blogs">
+            <article>
+                <div class="article-header flex-horizontal">
+                    <div class="title center-y">
+                        <h2>mental health problems among online/virtual college students</h2>
+                        <p>sad sads saded sadedssdada yati matulog sako oi</p>
+                    </div>
+                    <div class="publisher center-y">
+                        <p class="publisher-p">April 11, 2021</p>
+                    </div>
+                </div>
+                <div class="article-content">
+
+                </div>
+                <footer class="article-footer">
+
+                </footer>
+            </article>
+            <article>
+                <div class="article-header">
+
+                </div>
+                <div class="article-content">
+
+                </div>
+                <footer class="article-footer">
+
+                </footer>
+            </article>
+            <article>
+                <div class="article-header">
+
+                </div>
+                <div class="article-content">
+
+                </div>
+                <footer class="article-footer">
+
+                </footer>
+            </article>
+        </div>
+        
+    </div>
+    <footer></footer>
 </body>
-<script src="./firebase/config.js"></script>
-<script src="./firebase/app.js"></script>
 </html>
