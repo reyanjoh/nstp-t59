@@ -48,7 +48,7 @@ body{
 }
 
 p{
-    font-size: .8rem;
+    font-size: .7rem;
     text-transform: uppercase;
     color: #77858F;
     letter-spacing: 2px;
@@ -138,8 +138,6 @@ h1{
 } */
 
 article{
-    background-color: aqua;
-    height: 100vh;
     background-color: #ffffff;
     border: 1px solid #E2E2E2;
     margin: 0 0 3rem;
@@ -167,16 +165,46 @@ h2{
 
 .publisher{
     height: 100%;
-    width: 25rem;
+    width: 20rem;
     border-left: 1px solid #E2E2E2;
+    text-align: end;
+    padding: 0 3rem;
 }
 
-.publisher-p{
+.publisher-timestamp{
     font-size: .8rem;
     font-weight: bold;
     text-transform: uppercase;
     color: #3C3B3B;
     letter-spacing: 2px;
+}
+
+.author-info{
+    margin-top: .5rem;
+    display: flex;
+    justify-content: end;
+}
+
+.author-name{
+    margin: auto;
+    text-decoration: 1px solid black;
+}
+.author-image{
+    border-radius: 100%;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.article-content{
+    padding: 3rem;
+}
+
+.article-p{
+    margin-top: 3rem;
+    text-transform: unset;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    line-height: 1.9rem;
 }
 
 /* CONTENT STYLING END */
