@@ -16,3 +16,22 @@ export const Showmore = (Blogs) => {
         
     }
 }
+
+export const toggleBtn = () => {
+    let tgle = true;
+    const toggleBtn = document.querySelector('.toggle-btn');
+    const sideNav = document.querySelector('.mobile-side-nav-filter');
+    const mobileSideNav = document.querySelector('.mobile-side-nav');
+    const blogPage = document.querySelector('.blog-page');
+    
+
+
+    toggleBtn.addEventListener('click', (e) => {
+        tgle = !tgle;
+        toggleBtn.style = 'display: hidden';
+        sideNav.style = 'display: unset';
+        blogPage.style = 'opacity: .4';
+        mobileSideNav.style = 'margin-right: 0';
+        console.log(tgle);
+    });
+}

@@ -12,11 +12,17 @@
     margin: 0;
     overflow-x: hidden;
 }
-
+.blog-page{
+    position: absolute;
+    z-index: 20;
+}
 body{
     background-color: #F4F4F4;
 }
 
+.blur{
+        opacity: .4;
+    }
 
 .flex-horizontal{
     display: flex;
@@ -136,6 +142,10 @@ header{
 h1{
     margin: 1.5rem 0;
     color: #3C3B3B;
+}
+
+.show-on-mobile{
+    display: none;
 }
 
 
@@ -263,6 +273,11 @@ footer{
     height: 10rem;
 }
 
+@media only screen and (max-width: 1920px) {
+    :root{
+        font-size: 13px;
+    }
+  }
 
 @media only screen and (max-width: 1000px) {
     :root{
@@ -270,10 +285,122 @@ footer{
     }
   }
 
-  @media only screen and (max-width: 860px) {
+  @media only screen and (max-width: 859px) {
     :root{
         font-size: 13px;
     }
+    .hide-on-mobile{
+        display: none;
+    }
+
+    .show-on-mobile{
+        margin: auto .5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+
+    .toggle-btn-lines{
+        height: 3px;
+        width: 40%;
+        border-radius: 100px;
+        margin: 1px auto;
+        background-color: #9ba2a7;
+    }
+
+    .toggle-btn:hover .toggle-btn-lines{
+        transition: .3s;
+        background-color: #787EFF;
+    }
+    .filter{
+        position: fixed;
+        z-index: 30;
+
+        height: 100vh;
+        width: 100%;
+        background-color:teal;
+        opacity: .4;
+
+        display: none;
+    }
+
+    .mobile-side-nav-filter{
+        position: fixed;
+        z-index: 35;
+        transition-duration: 1000ms;
+
+        height: 100vh;
+        width: 100%;
+        display: hidden;
+    }
+
+    .mobile-side-nav{
+        position: fixed;
+        z-index: 40;
+        transition-duration: 1000ms;
+        transition-timing-function: ease-in-out;
+        height: 100vh;
+        width: 45%;
+        right: 0;
+        margin-right: -30rem;
+        
+        background-color:#ffffff;
+    }
+
+
+    .fa-search{
+        width: 2rem;
+        position: relative;
+        font-size: 1.5rem;
+        padding: 0;
+        margin: 0 0 -2.8rem 1rem;
+    }
+
+    .mobile-search-input{
+        background-color: #f8f8f8;
+        padding-left: 3.4rem;
+    }
+
+    .mobile-side-nav-button{
+        height: 3rem;
+        margin: .5rem 0;
+        border: none;
+        font-size: 1rem;
+    }
+    
+    .mobile-sign-in{
+        border: 1px solid #E2E2E2;
+    }
+
+    .mobile-side-nav-div{
+        border-top: 1px solid #dadada;
+        padding: 3rem;
+        /* text-align: start; */
+    }
+    .mobile-links{
+        font-size: 1rem;
+        
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+    .mobile-links-after::after { 
+        position: absolute;
+        content: "";
+        height:  1px;
+        background-color: #E2E2E2;
+        left: 3rem;
+        right: 3rem;
+        margin: 3rem 0;
+    }
+    .mobile-center-x{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
   }
 
   @media only screen and (max-width: 768px) {
@@ -281,6 +408,13 @@ footer{
         font-size: 13px;
     }
   }
+
+  @media only screen and (max-width: 720px) {
+    :root{
+        font-size: 13px;
+    }
+  }
+
 
   @media only screen and (max-width: 540px) {
     :root{

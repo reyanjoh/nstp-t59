@@ -1,5 +1,5 @@
 import { HideBlogArticlePContent } from './modules/blogsDOM.js';
-import { Showmore } from './modules/clicksOnly.js';
+import { Showmore, toggleBtn } from './modules/clicksOnly.js';
 import { Blogs } from '../../dbPlaceholder/db.js';
 import { InsertContent } from './modules/blogsDOMInsertContent.js';
 
@@ -10,3 +10,5 @@ import { InsertContent } from './modules/blogsDOMInsertContent.js';
 // }
 InsertContent(Blogs);
 Showmore(Blogs);
+
+toggleBtn();
