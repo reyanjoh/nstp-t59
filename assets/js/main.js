@@ -9,4 +9,4 @@ import { InsertContent } from './modules/blogsDOMInsertContent.js';
 //     console.log( Blogs[i].author);
 // }
 InsertContent(Blogs);
-// Showmore();
+Showmore(Blogs);

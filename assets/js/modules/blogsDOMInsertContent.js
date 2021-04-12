@@ -1,3 +1,5 @@
+import { Showmore } from './clicksOnly.js';
+
 export const InsertContent = (Blogs) => {
 
     const div = document.createElement('div');
@@ -55,17 +57,27 @@ export const InsertContent = (Blogs) => {
             article.appendChild(articleContent);
 
                 img = document.createElement('img');
-                img.src = './images/pic01.jpg';
+                if(Blogs[i].image == '' || Blogs[i].image == null){
+                    let imgSelector = Math.floor(Math.random() * 3)
+                    if(imgSelector == 1){
+                        img.src = './images/pic01.jpg';
+                    }else if(imgSelector == 2){
+                        img.src = './images/pic02.jpg';
+                    }else if(imgSelector == 3){
+                        img.src = './images/pic03.jpg';
+                    }
+                }else{
+                    img.src = Blogs[i].image;
+                }
                 img.alt = '';
                 img.className = 'article-content-img';
                 articleContent.appendChild(img);
 
                 p = document.createElement('p');
                 p.className = 'article-p';
-                p.innerText =`${Blogs[i].body.substring(0,200)}. . .`
+                // const pp = Blogs[i].body;
+                p.innerText =`${Blogs[i].body.substring(0,200)}. . .`;
                 articleContent.appendChild(p);
-
-            
 
 /////////////////////////////////////////articleFooter/////////////////////////////////////////////////// 
             const articleFooter = document.createElement('footer');
@@ -74,8 +86,9 @@ export const InsertContent = (Blogs) => {
 
                 const inputButton = document.createElement('input');
                 inputButton.className = 'article-footer-button pointer';
+                inputButton.id = Blogs[i].id;
                 inputButton.type = 'button';
-                inputButton.value = 'CONTINUE READING';
+                inputButton.value = 'SHOW MORE';
                 articleFooter.appendChild(inputButton);
 
                 const articleFooterDiv = document.createElement('div');

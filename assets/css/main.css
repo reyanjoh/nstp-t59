@@ -10,6 +10,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 body{
@@ -55,6 +56,10 @@ p{
     text-transform: uppercase;
     color: #77858F;
     letter-spacing: 2px;
+}
+
+.selected{
+    color: #787EFF;
 }
 
 .click:hover{
@@ -266,6 +271,42 @@ footer{
   }
 
   @media only screen and (max-width: 860px) {
+    :root{
+        font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    :root{
+        font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 540px) {
+    :root{
+        font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    :root{
+        font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 411px) {
+    :root{
+        font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 375px) {
+    :root{
+        font-size: 13px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
     :root{
         font-size: 13px;
     }
