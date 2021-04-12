@@ -3,6 +3,7 @@ import { Showmore, toggleBtn } from './modules/clicksOnly.js';
 import { Blogs } from '../../dbPlaceholder/db.js';
 import { InsertContent } from './modules/blogsDOMInsertContent.js';
 
+toggleBtn();
 // HideBlogArticlePContent();
 
 // for (let i = 0; i < Blogs.length; i++) {
@@ -11,4 +12,3 @@ import { InsertContent } from './modules/blogsDOMInsertContent.js';
 InsertContent(Blogs);
 Showmore(Blogs);
 
-toggleBtn();
