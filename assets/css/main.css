@@ -20,6 +20,10 @@ body{
     background-color: #F4F4F4;
 }
 
+a{
+    overflow-y: hidden;
+}
+
 .blur{
         opacity: .4;
     }
