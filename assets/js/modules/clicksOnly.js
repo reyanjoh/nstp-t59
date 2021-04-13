@@ -26,20 +26,20 @@ export const toggleBtn = () => {
     const blogPage = document.querySelector('.blog-page');
     
     document.addEventListener('click', (e) =>{
-        console.log(e.target);
+        // console.log(e.target);
         if(e.target.classList.contains('toggle-btn')){
             tgle = !tgle;
-            console.log(tgle);
+            // console.log(tgle);
             if(tgle == true){
                 sideNavFilter.style = 'width: 100%';
                 blogPage.style = 'opacity: .4';
-                mobileSideNav.style = 'width: 45%';
-                // mobileSideNav.style = 'margin-right: 0';
+                // mobileSideNav.style = 'width: 45%';
+                mobileSideNav.style = 'margin-right: 0';
             }else{
                 sideNavFilter.style = 'width: 0';
                 blogPage.style = 'opacity: 1';
-                mobileSideNav.style = 'width: 0';
-                // mobileSideNav.style = 'margin-right: -30rem';
+                // mobileSideNav.style = 'width: 0';
+                mobileSideNav.style = 'margin-right: -30rem';
     
             }
         }
