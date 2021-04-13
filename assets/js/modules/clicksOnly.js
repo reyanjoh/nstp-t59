@@ -24,6 +24,7 @@ export const toggleBtn = () => {
     const sideNavFilter = document.querySelector('.mobile-side-nav-filter');
     const mobileSideNav = document.querySelector('.mobile-side-nav');
     const blogPage = document.querySelector('.blog-page');
+    const body = document.querySelector('body');
     
     document.addEventListener('click', (e) =>{
         // console.log(e.target);
@@ -35,12 +36,13 @@ export const toggleBtn = () => {
                 blogPage.style = 'opacity: .4';
                 // mobileSideNav.style = 'width: 45%';
                 mobileSideNav.style = 'margin-right: 0';
+                body.style = 'overflow-y: hidden';
             }else{
                 sideNavFilter.style = 'width: 0';
                 blogPage.style = 'opacity: 1';
                 // mobileSideNav.style = 'width: 0';
                 mobileSideNav.style = 'margin-right: -30rem';
-    
+                body.style = 'overflow-y: unset';
             }
         }
     })
