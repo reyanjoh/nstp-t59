@@ -102,6 +102,5 @@ export const InsertContent = (Blogs) => {
                     iValue[k].innerText = `${Math.floor(Math.random() * 100)}`;
                     
                 }
-
     }
 }
