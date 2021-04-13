@@ -18,40 +18,31 @@ export const Showmore = (Blogs) => {
 }
 
 export const toggleBtn = () => {
-    let tgle = true;
+
+    let tgle = false;
     const toggleBtn = document.querySelectorAll('.toggle-btn');
     const sideNavFilter = document.querySelector('.mobile-side-nav-filter');
     const mobileSideNav = document.querySelector('.mobile-side-nav');
     const blogPage = document.querySelector('.blog-page');
     
-
-
-    toggleBtn[0].addEventListener('click', (e) => {
-        tgle = !tgle;
-        // toggleBtn.style = 'display: hidden';
-        if( !tgle ){
-            sideNavFilter.style = 'display: unset';
-            blogPage.style = 'opacity: .4';
-            mobileSideNav.style = 'margin-right: 0';
-            console.log(tgle);
-        }
-        
-    });
-
-    sideNavFilter.addEventListener('click', (e) => {
-        if(e.target.classList == 'mobile-side-nav-filter'){
-            tgle = !tgle;
+    document.addEventListener('click', (e) =>{
         console.log(e.target);
-        // toggleBtn.style = 'display: hidden';
-            if( tgle ){
-                sideNavFilter.style = 'display: none';
+        if(e.target.classList.contains('toggle-btn')){
+            tgle = !tgle;
+            console.log(tgle);
+            if(tgle == true){
+                sideNavFilter.style = 'width: 100%';
+                blogPage.style = 'opacity: .4';
+                mobileSideNav.style = 'width: 45%';
+                // mobileSideNav.style = 'margin-right: 0';
+            }else{
+                sideNavFilter.style = 'width: 0';
                 blogPage.style = 'opacity: 1';
-                mobileSideNav.style = 'margin-right: -30rem';
-                console.log(tgle);
+                mobileSideNav.style = 'width: 0';
+                // mobileSideNav.style = 'margin-right: -30rem';
+    
             }
         }
         
-    });
-
-
+    })
 }

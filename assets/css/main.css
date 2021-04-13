@@ -325,30 +325,28 @@ footer{
         width: 100%;
         background-color:teal;
         opacity: .4;
-
         display: none;
     }
 
     .mobile-side-nav-filter{
         position: fixed;
         z-index: 35;
-        transition: all 1000ms ease-in-out;
 
         height: 100vh;
-        width: 100%;
-        display: none;
+        width: 0;
+        transition: all 1000ms ease-in-out;
+        /* background-color: teal; */
     }
 
     .mobile-side-nav{
         position: fixed;
         z-index: 40;
-        transition-duration: 1000ms;
-        transition: all 1000ms ease-in-out;
         height: 100vh;
-        width: 45%;
+        width: 0;
         right: 0;
-        margin-right: -30rem;
-        
+        /* margin-right: -30rem; */
+        transition: all 1000ms ease-in-out;
+
         background-color:#ffffff;
     }
 
@@ -387,7 +385,6 @@ footer{
     }
     .mobile-links{
         font-size: 1rem;
-        
         padding: 1rem;
         margin: 1rem 0;
     }
