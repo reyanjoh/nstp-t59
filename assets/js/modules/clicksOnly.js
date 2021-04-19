@@ -32,7 +32,7 @@ export const toggleBtn = () => {
             tgle = !tgle;
             // console.log(tgle);
             if(tgle == true){
-                sideNavFilter.style = 'width: 100%';
+                sideNavFilter.style = 'width: 100vw';
                 blogPage.style = 'opacity: .4';
                 // mobileSideNav.style = 'width: 45%';
                 mobileSideNav.style = 'margin-right: 0';

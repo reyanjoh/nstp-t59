@@ -14,7 +14,7 @@ export const InsertContent = (Blogs) => {
             article.appendChild(articleHeader);
 
                 const titleDiv = document.createElement('div');
-                titleDiv.className = 'title center-y';
+                titleDiv.className = 'title spaced center-y';
                 articleHeader.appendChild(titleDiv);
 
                     const h2 = document.createElement('h2');
@@ -26,7 +26,7 @@ export const InsertContent = (Blogs) => {
 
 
                 const publisherDiv = document.createElement('div');
-                publisherDiv.className = 'publisher center-y';
+                publisherDiv.className = 'publisher spaced center-y';
                 articleHeader.appendChild(publisherDiv);
 
                     p = document.createElement('p');
@@ -58,12 +58,12 @@ export const InsertContent = (Blogs) => {
 
                 img = document.createElement('img');
                 if(Blogs[i].image == '' || Blogs[i].image == null){
-                    let imgSelector = Math.floor(Math.random() * 3)
-                    if(imgSelector == 1){
+                    let imgSelector = Math.floor(Math.random() * 3);
+                    if(imgSelector == 0){
                         img.src = './images/pic01.jpg';
-                    }else if(imgSelector == 2){
+                    }else if(imgSelector == 1){
                         img.src = './images/pic02.jpg';
-                    }else if(imgSelector == 3){
+                    }else if(imgSelector == 2){
                         img.src = './images/pic03.jpg';
                     }
                 }else{
