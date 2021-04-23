@@ -553,7 +553,8 @@ footer{
 
     .author-info{
         flex-direction: row;
-        justify-content: right;
+        justify-content:flex-end;
+        width: auto;
     }
 
     .author-name{
